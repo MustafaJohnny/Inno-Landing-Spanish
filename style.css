@@ -292,7 +292,7 @@ img {
 }
 
 .sectionTwoContent {
-  grid-template-columns: 50fr 50fr;
+  grid-template-columns: 45fr 55fr;
   display: grid;
 }
 
@@ -399,9 +399,14 @@ img {
   color: #fafafa;
 }
 
+.hotelImg {
+  margin-bottom: -1rem;
+}
+
 /**/
 
 .forthSection {
+  padding-top: 10rem;
   background-color: #f7cf47;
 }
 
@@ -410,17 +415,17 @@ img {
 }
 
 .img2 {
+  opacity: 0;
   display: none;
   visibility: hidden;
-  opacity: 0;
 }
 
 .section4HeadingArea {
-  padding: 6rem 14rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 0rem 0rem 0rem 12.5rem;
 }
 
 .section4Heading {
@@ -431,36 +436,44 @@ img {
 }
 
 .forthSecContent {
-  margin: 0 auto;
-  padding: 0 10rem;
+  gap: 5rem;
   display: grid;
-  grid-template-columns: 58fr 42fr;
-  gap: 8rem;
+  padding: 6rem 10rem;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 50fr 50fr;
+}
+
+.img1 {
+  width: 90% !important;
 }
 
 .box2 {
-  grid-template-columns: 40fr 60fr;
-  padding-right: 0rem !important;
+  padding: 12rem 10rem;
   gap: 0rem !important;
-  padding-top: 15rem;
-  min-height: 50vw;
   background-color: #000;
+  grid-template-columns: 40fr 60fr;
 }
 
-.boxy {
-  grid-template-columns: 35fr 65fr;
-  padding-right: 0rem !important;
+.box3 {
+  padding: 10rem 12rem;
   gap: 0rem !important;
-  padding-top: 15rem;
-  min-height: 50vw;
+  grid-template-columns: 55fr 45fr;
 }
 
-.boxImg2 {
-  transform: translateX(-20rem);
+.boxImg3 {
+  transform: translateX(-18rem);
 }
 
-.img2Origin {
+.img3 {
   width: 110% !important;
+}
+
+.box4 {
+  grid-template-columns: 35fr 65fr;
+  padding: 14rem 8rem;
+  background-color: #000;
+  gap: 0rem !important;
 }
 
 .headigBoxTwo {
@@ -468,16 +481,6 @@ img {
 }
 .listBoxTwo {
   color: #fff !important;
-}
-
-.box3 {
-  gap: 0rem !important;
-  grid-template-columns: 50fr 50fr;
-  padding: 5rem 0rem;
-}
-
-.boxImg3 {
-  transform: translateX(-14rem);
 }
 
 .boxImg4 {
@@ -489,10 +492,10 @@ img {
 }
 
 .forthSecTextBox {
+  gap: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 3rem;
 }
 
 .middel {
@@ -505,11 +508,11 @@ img {
 }
 
 .forthSecList {
+  gap: 1.8rem;
   display: flex;
+  margin-left: 2rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.8rem;
-  margin-left: 2rem;
 }
 
 .forthWholeList {
@@ -523,11 +526,11 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0rem;
+  gap: 0rem !important;
 }
 
 .fifthSection {
-  min-height: 51vw;
+  min-height: 55vw;
   background-color: #f7cf47;
 }
 
@@ -555,10 +558,10 @@ img {
 }
 
 .fifthTextArea {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .fifthText {
@@ -713,7 +716,7 @@ img {
 }
 
 .sectionProduct {
-  padding: 6rem 12rem;
+  padding: 10rem 12rem;
   background-color: #fffbea;
 }
 
