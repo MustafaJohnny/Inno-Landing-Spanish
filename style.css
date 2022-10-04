@@ -22,6 +22,183 @@ img {
   width: 100%;
 }
 
+/* MODAL WINDOW */
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.6rem;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  position: fixed;
+  max-width: 60rem;
+  min-height: 30rem;
+  padding: 0rem 6rem;
+  border-radius: 20px;
+  transition: all 0.5s;
+  background-color: #f3f3f3;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  animation: openModall 0.5s ease-out forwards;
+}
+
+.modal2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  position: fixed;
+  max-width: 60rem;
+  padding: 4rem 4rem;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  animation: openModall 0.5s ease-in forwards;
+}
+
+@keyframes openModall {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.highlight {
+  position: relative;
+}
+
+.headerTwo {
+  transform: translateX(0rem) !important;
+  margin-bottom: 1rem;
+}
+
+.highlight::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  background-image: linear-gradient(to top left, #f70606, #f3dc2f);
+}
+
+.modal__header {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  transform: translateX(2.4rem);
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: #3f3f46;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 3.8rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.PhoneNumInput {
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1rem 4rem;
+  padding-left: 1.8rem;
+  border-radius: 25px;
+  transition: all 0.5s;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+}
+
+.PhoneNumInput::placeholder {
+  font-family: inherit;
+  font-size: 1.8rem !important;
+}
+
+.PhoneNumInput:focus {
+  outline: none;
+  box-shadow: 0 0 0 8px rgba(88, 86, 86, 0.103);
+}
+
+.btnSendTele {
+  border: none;
+  font-family: inherit;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fafafa;
+  background-image: linear-gradient(to top left, #f7060699, #f3dc2f);
+  transition: all 0.5s;
+  padding: 1rem 6rem;
+  cursor: pointer;
+}
+
+.btnSendTele:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0 0 8px rgba(132, 60, 60, 0.096),
+    0px 8px 18px rgba(251, 193, 20, 0.403);
+}
+
+.btnCloseModals {
+  border: none;
+  font-family: inherit;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fafafa;
+  background-image: linear-gradient(to top left, #f7060699, #f3dc2f);
+  padding: 1rem 6rem;
+  cursor: pointer;
+}
+
+.hidden {
+  pointer-events: none;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -425,11 +602,11 @@ img {
   background-color: #f7cf47;
 }
 
-.img2 {
+/* .img2 {
   opacity: 0;
   display: none;
   visibility: hidden;
-}
+} */
 
 .section4HeadingArea {
   display: flex;
@@ -670,6 +847,7 @@ img {
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 2.4rem;
+  text-decoration: none;
 }
 
 .foterLink {
@@ -1195,6 +1373,68 @@ td {
   .btn-mobile-nav {
     display: block;
     z-index: 9999;
+  }
+
+  /* MODAL WINDOW */
+  .modal {
+    max-width: 70vw;
+    min-height: 50vw;
+    padding: 0vw 35vw;
+    gap: 5vw;
+    transition: unset !important;
+  }
+
+  .modal2 {
+    max-width: 50vw;
+    min-height: 35vw;
+    padding: 0vw 28vw;
+    gap: 5vw;
+  }
+
+  .headerTwo {
+    transform: translate(0vw, -4vw) !important;
+    font-size: 4vw !important;
+    position: absolute !important;
+    margin-bottom: 1rem;
+  }
+
+  .btnCloseModals {
+    transform: translate(0vw, 8vw);
+    transition: unset !important;
+    font-size: 3.2vw;
+    padding: 1vw 7vw;
+  }
+
+  .modal__header {
+    position: absolute;
+    font-size: 3.2vw;
+    line-height: 5vw;
+    transform: translate(6vw, -10vw);
+  }
+
+  .btn--close-modal {
+    top: 1vw;
+    right: 2.5vw;
+    font-size: 6vw;
+    transition: unset !important;
+  }
+
+  .PhoneNumInput {
+    margin-top: 17vw;
+    font-size: 3.5vw;
+    padding: 1vw 5vw;
+    padding-left: 2vw;
+    transition: unset !important;
+  }
+
+  .PhoneNumInput::placeholder {
+    font-size: 3.4vw !important;
+  }
+
+  .btnSendTele {
+    font-size: 3.2vw;
+    transition: unset !important;
+    padding: 1vw 7vw;
   }
 
   .heroBtnPhone {
