@@ -616,12 +616,6 @@ img {
   background-color: #f7cf47;
 }
 
-/* .img2 {
-  opacity: 0;
-  display: none;
-  visibility: hidden;
-} */
-
 .section4HeadingArea {
   display: flex;
   flex-direction: column;
@@ -640,7 +634,7 @@ img {
 .forthSecContent {
   gap: 5rem;
   display: grid;
-  padding: 6rem 10rem;
+  padding: 5rem 10rem;
   align-items: center;
   justify-content: center;
   grid-template-columns: 50fr 50fr;
@@ -717,6 +711,10 @@ img {
   align-items: flex-start;
 }
 
+.forthSecListWidth1 {
+  width: 80% !important;
+}
+
 .forthWholeList {
   color: #27272a;
   font-weight: 600;
@@ -741,7 +739,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 3.4rem;
   padding: 5rem 20rem;
   position: relative;
 }
@@ -756,21 +754,15 @@ img {
   text-align: center;
   color: #3d3a3a;
   font-weight: 700;
-  font-size: 4.4rem;
-}
-
-.fifthTextArea {
-  gap: 1rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  font-size: 4.5rem;
 }
 
 .fifthText {
-  color: #3d3a3a;
+  color: #3f3f46;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.8rem;
+  line-height: 3.4rem;
 }
 
 .section5Img {
@@ -857,6 +849,14 @@ img {
 }
 
 .infoText {
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-decoration: none;
+}
+
+.infoTextFooter {
   color: #fafafa;
   font-weight: 500;
   font-size: 1.4rem;
@@ -1598,6 +1598,10 @@ td {
     height: 16.8vw;
   }
 
+  .forthSecListWidth1 {
+    width: 110% !important;
+  }
+
   .iconBackBack {
     width: 21.5vw;
     height: 21.5vw;
@@ -1952,7 +1956,17 @@ td {
   .infoText {
     font-weight: 400 !important;
     font-size: 3.2vw;
-    line-height: 6vw;
+    line-height: 6.4vw;
+  }
+
+  .infoTextFooter {
+    font-weight: 400 !important;
+    font-size: 3.2vw;
+    line-height: 5vw;
+  }
+
+  .infoTextWidth {
+    width: 75%;
   }
 
   .foterLink {
@@ -2155,7 +2169,7 @@ td {
   .InfoText {
     font-weight: 500;
     font-size: 3.4vw;
-    line-height: 4vw;
+    line-height: 6.2vw;
     color: #292524;
     width: 80%;
   }
