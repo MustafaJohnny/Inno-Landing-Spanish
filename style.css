@@ -193,16 +193,6 @@ img {
   opacity: 0;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 .header {
   position: fixed;
   width: 100%;
@@ -856,9 +846,9 @@ input[type="number"] {
 
 .foterLink {
   text-decoration: none;
-  font-size: 1.5rem;
-  color: #fafafa;
-  font-weight: 400;
+  font-size: 1.5rem !important;
+  color: #fafafa !important;
+  font-weight: 400 !important;
   transition: all 0.5s;
   cursor: pointer !important;
 }
@@ -1953,8 +1943,8 @@ td {
   }
 
   .foterLink {
-    font-size: 3.2vw;
-    font-weight: 300;
+    font-size: 3.2vw !important;
+    font-weight: 300 !important;
   }
 
   .foterLinkBig {
