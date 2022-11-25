@@ -1379,6 +1379,10 @@ td {
     z-index: 9999;
   }
 
+  .movefoterLink {
+    transform: translate(0.5vw, -3vw) !important;
+  }
+
   /* MODAL WINDOW */
   .modal {
     max-width: 70vw;
