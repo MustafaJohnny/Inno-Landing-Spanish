@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Inno Company Landing Website - Front-End Commercial Poject
 
 ## Overview
@@ -33,6 +32,3 @@ Inno Menu Original Company Landing Website.
 ![app](https://github.com/MustafaJohnny/Inno-Landing-Spanish/blob/master/Images/12.png?raw=true)
 ![app](https://github.com/MustafaJohnny/Inno-Landing-Spanish/blob/master/Images/13.png?raw=true)
 ![app](https://github.com/MustafaJohnny/Inno-Landing-Spanish/blob/master/Images/14.png?raw=true)
-=======
-- Live Site URL: https://inno.menu/
->>>>>>> 664511cb0efe3cbdc52176150a871b2f64437daa
